@@ -1,10 +1,16 @@
-<!doctype html>
-<html lang="pt-BR">
+<!DOCTYPE html>
+<html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <title>Meu Site </title>
+<title>Login</title>
+<meta charset="utf-8">
 </head>
 <body>
-    <?php echo "<h1>Olá, Santa maria!</h1>" ?>
+<form method="post" action="login.php">
+<label>CPF</label>
+<input type="text" name="cpf"><br>
+<label>Senha:</label>
+<input type="password" name="senha"><br>
+<input type="submit" value="Entrar">
+</form>
 </body>
 </html>
