@@ -16,6 +16,7 @@ $stmt->bindParam(':senha', $senha);
 $stmt->execute();
 if ( $linha = $stmt->fetch() ) { // fetch() retorna false se não tiver linhas
 echo "<p>Login bem-sucedido! Bem-vindo, " . $linha['nome'] . "!</p>";
+echo "<p><a href='lista.php'>Ver lista de alunos</a></p>";
 } else {
 echo "<p>CPF ou senha incorretos.</p>";
 }
